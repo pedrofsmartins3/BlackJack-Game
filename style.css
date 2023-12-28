@@ -1,0 +1,96 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    background-image: url("table.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.div-game {
+    background-image: url("table2.jpg");
+    text-align: center;
+    display: table;
+    height: 500px;
+    width: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 8px 16px black;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0px;
+    color: goldenrod;
+}
+
+#message-el {
+    font-style: italic;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 55px;
+    padding-bottom: 10px;
+}
+
+button {
+    color: #016f32;
+    width: 150px;
+    height: 20px;
+    background-color: goldenrod;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
+.player-el {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.cards {
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 10%;
+}
+
+.name-box {
+    background-color: goldenrod;
+    border: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.8);
+    color:#016f32;
+    border-radius: 5px;
+    padding: 16px 20px;
+}
+.name-box button {
+    border-color: #016f32;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.name-box input {
+    border-radius: 2px;
+}
+
+#backdrop {
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(2px);
+}
