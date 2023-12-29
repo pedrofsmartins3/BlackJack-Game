@@ -7,4 +7,5 @@ I did this while watching a JS tutorial but I updated it with lots of new things
 - the points that go up and down if you win or lose.
 
 Go check it out 👇🏼
+
 https://pedrofsmartins3.github.io/BlackJack-Game/
