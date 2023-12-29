@@ -4,17 +4,20 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <div class="div-game">
             <h1>BlackJack</h1>
             <p id="message-el">Want to play a round?</p>
-            <p id="cards-el">Cards:</p>
-            <div id="cardsdiv" class="cardsdiv">
-                <img id="card1-el" class="cards" src="./cards/card back red.png">
-                <img id="card2-el" class="cards" src="./cards/card back red.png">
+            <div class="cards-el-div">
+                <p id="cards-el">Cards:</p>
+                <div id="cardsdiv" class="cardsdiv">
+                    <img id="card1-el" class="cards" src="./cards/card back red.png">
+                    <img id="card2-el" class="cards" src="./cards/card back red.png">
+                </div>
             </div>
             <p id="sum-el">Sum:</p>
-            <button id="startgame-btn" onclick="startGame()">RESTART GAME</button>
-            <button id="newcard-btn" onclick="newCard()">NEW CARD</button>
+            <div class="div-btn">
+                <button id="startgame-btn" onclick="startGame()">RESTART GAME</button>
+                <button id="newcard-btn" onclick="newCard()">NEW CARD</button>
+            </div>
             <p id="player-el"></p>
 
             <div id="backdrop"></div>
@@ -24,6 +27,5 @@
                 <input id="username" type="text" name="username" placeholder="Enter your name here..."/>
                 <button id="startgame-btn" onclick="startGame()">START GAME</button>
             </div>
-        </div>
     </body>
 </html>
