@@ -1,66 +1,89 @@
-body {
+html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    background-image: url("table.png");
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-image: url(table.png);
+    background-repeat: no-repeat;
     background-size: cover;
+}
+
+.root {
     display: flex;
     flex-direction: column;
+    justify-content: top;
     align-items: center;
-    text-align: center;
-    margin-top: 100px;
-}
-
-h1 {
-    font-size: 3rem;
-    margin-top: 0px;
-    color: goldenrod;
-}
-
-#message-el {
-    font-style: italic;
-    font-size: 2rem;
-    color: white;
-    font-weight: bold;
-    margin-top: 0px;
-}
-
-button {
-    color: #016f32;
-    width: 150px;
-    height: 40px;
-    background-color: goldenrod;
-    border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 0px;
-    font-weight: bold;
-    font-size: 1rem;
-    border: none;
-    margin-bottom: 0px;
-    margin-top: 2px;
 }
 
 .cards-el-div {
-    background-image: url("./table-black-jack.png");
-    background-size: cover;
+    background-image: url(table-black-jack.png);
     background-repeat: no-repeat;
-    width: 600px;
-    height: 350px;
+    background-size: cover;
+    padding-top: 7em;
+    padding-bottom: 8em;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.cardsdiv {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 1em;
 }
 
 .cards {
-    width: 11%;
+    width: 10%;
 }
 
-.div-btn {
-    display: flex;
-    gap: 10px;
+h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 5rem;
+    color: goldenrod;
+    line-height: 2em;
+    padding: 0;
+    margin: 0;
 }
+
+p {
+    font-size: 3rem;
+}
+
+#player-el #sum-el {
+    color: white;
+}
+
+#message-el {
+    color: white;
+    line-height: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+/* Buttons */
+
+button {
+    color: white;
+    padding: 20px 30px;
+    width: 400px;
+    border-radius: 10px;
+    font-size: 2rem;
+    background-color: goldenrod;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    border: none;
+}
+
+/* NAME BOX */
 
 .name-box {
+    width: 575px;
+    height: 200px;
     background-color: goldenrod;
     border: none;
     position: absolute;
@@ -74,16 +97,24 @@ button {
     box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.8);
     color:#016f32;
     border-radius: 5px;
-    padding: 16px 20px;
+    padding: 20px 30px;
+    font-size: 3rem;
 }
+
 .name-box button {
-    border-color: #016f32;
-    border: 2px solid;
-    border-radius: 5px;
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+    height: 30%;
+    font-size: 1.5rem;
+    background-color: #016f32;;
 }
 
 .name-box input {
     border-radius: 2px;
+    width: 90%;
+    height: 30%;
+    font-size: 1.5rem;
 }
 
 #backdrop {
@@ -91,3 +122,28 @@ button {
     inset: 0;
     backdrop-filter: blur(2px);
 }
+
+/* MEDIA */
+
+/* TABLETS and above */
+
+/* @media screen and (min-width: 768px) {
+    .cards-el-div {
+        width: 600px;
+        padding-top: 5em;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        width: 300px;
+        font-size: 1.5rem;
+    }
+} */
