@@ -28,6 +28,7 @@ function getRandomCard () {
 }
 
 function startGame() {
+    event.preventDefault()
     isAlive = true
     hasBlackJack = false
     let firstCard = getRandomCard()
